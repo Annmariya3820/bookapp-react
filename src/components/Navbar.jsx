@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <div>
       <nav class="navbar navbar-expand-lg bg-info">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">LIBRARY MANAGMENT</a>
+    <Link class="navbar-brand" to="#">LIBRARY MANAGMENT</Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -13,19 +14,19 @@ const Navbar = () => {
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
        
         <li class="nav-item">
-          <a class="nav-link" href="/">Add Book</a>
+          <Link class="nav-link" to="/">Add Book</Link>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/delete">Delete Book</a>
+          <Link class="nav-link" to="/delete">Delete Book</Link>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="/search">Search Book</a>
+          <Link class="nav-link" to="/search">Search Book</Link>
         </li>
        
         <li class="nav-item">
-          <a class="nav-link" href="/viewall">Viewall Books</a>
+          <Link class="nav-link" to="/viewall">Viewall Books</Link>
         </li>
       </ul>
       
